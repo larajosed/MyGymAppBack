@@ -1,0 +1,52 @@
+POST http://localhost:3000/api/usuarios/registro
+
+###
+POST http://localhost:3000/api/usuarios/login
+Content-Type: application/json
+
+{
+    "email": "pepe@gmail.com",
+    "password": "12345"
+
+}
+
+###
+POST http://localhost:3000/api/usuarios/registro
+Content-Type: application/json
+
+{
+    "nombre": "Pedro",
+    "apellidos": "Perez",
+    "email": "pepe@gmail.com",
+    "username": "pepe",
+    "password": "12345",
+    "genero": "M",
+    "fecha_nacimiento": "1986/12/10",
+    "direccion": "Calle Los Roques"
+}
+
+###
+GET http://localhost:3000/api/ejercicios/all
+
+###
+GET http://localhost:3000/api/ejercicios/muscle?grupoMuscular=1
+
+###
+GET http://localhost:3000/api/rutinas/ejercicios?routine=2
+
+###
+GET http://localhost:3000/api/rutinas/all
+
+###
+POST http://localhost:3000/api/add
+Content-Type: application/json
+
+{
+    "name": "Press de banca con mancuerna",
+    "description": "'Acostado  sobre el banco plano, agarrar las mancuernas, manos separadas a una longitud superior a los hombros:
+ Ejecutar una flexion de codos seguida por una extension de codos.'",
+    "url": "https://i.pinimg.com/originals/c3/87/56/c387563a61d70f61b020fe980755e575.jpg"
+}
+
+###
+POST http://localhost:3000/api/ejercicios/add
